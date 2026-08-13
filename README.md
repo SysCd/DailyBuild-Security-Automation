@@ -33,6 +33,12 @@ A practical portfolio of network security and automation labs, centred on FortiG
 | Automation | Compliance checks | Validation and pass/fail reporting |
 | Automation | Configuration workflow | Inventory → backup → change → validate |
 
+## FortiGate environment
+
+Sanitized FortiGate VM dashboard used for the firewall labs.
+
+![Sanitized FortiGate VM dashboard](evidence/fortigate-dashboard-sanitized.png)
+
 ## Documentation approach
 
 Only milestone projects that best demonstrate design, implementation, validation, and troubleshooting receive full write-ups. Use [LAB_TEMPLATE.md](LAB_TEMPLATE.md) for those projects.
