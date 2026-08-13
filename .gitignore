@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets.*
+
+# Raw backups and generated output
+backups/
+output/
+logs/
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
