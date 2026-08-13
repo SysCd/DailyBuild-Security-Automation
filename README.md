@@ -4,6 +4,8 @@ A practical portfolio of network security and automation labs, centred on FortiG
 
 > **Status:** Active learning project. Labs will be documented as they are built and validated.
 
+The tracks below are learning roadmaps, not a commitment to publish every practice session. Only selected milestone labs will receive full portfolio write-ups.
+
 ## What this repository demonstrates
 
 - FortiGate management, routing, firewall policy, NAT, DMZ, and VPN configuration
@@ -27,60 +29,50 @@ A practical portfolio of network security and automation labs, centred on FortiG
 
 ## Firewall lab track — FortiGate
 
-| Day | Scenario | Layout | Core task | Done? |
-| ---: | --- | --- | --- | :---: |
-| 1 | Management | Mac → FortiGate | Access CLI + GUI; inspect interfaces/config | No |
-| 2 | Basic Edge | Client → FortiGate → WAN | Configure LAN/WAN interfaces and addressing |  |
-| 3 | Internet Edge | Client → FortiGate → Internet | Security policy + source NAT |  |
-| 4 | Stateful Firewall | Client → FortiGate → Server | Inspect sessions and understand return traffic |  |
-| 5 | Policy Control | LAN → FortiGate → WAN | Allow/deny TCP, UDP, ICMP, and specific ports |  |
-| 6 | Troubleshooting | Reuse Day 5 | Break policy, routing, and NAT; diagnose each |  |
-| 7 | Multi-Zone | Users + Servers → FortiGate | Separate networks and control inter-zone traffic |  |
-| 8 | DMZ | LAN + DMZ + WAN | Publish web server using destination NAT/VIP |  |
-| 9 | Objects | Reuse Day 8 | Address/service objects and groups |  |
-| 10 | Logs | Reuse topology | Diagnose traffic entirely from FortiGate logs |  |
-| 11 | Application Control | LAN → Internet | App control + security profiles |  |
-| 12 | VPN | HQ ↔ Branch | Site-to-site IPsec |  |
-| 13 | VPN Troubleshooting | Reuse Day 12 | Break phase/config/routes and recover |  |
-| 14 | Consolidation | Rebuild | Rebuild LAN/WAN/policy/NAT from memory |  |
-| 15 | Enterprise Edge | Users + Servers + DMZ | Combine routing, NAT, policies, and logging |  |
-| 16 | Troubleshooting | Reuse Day 15 | Inject five firewall faults and fix them |  |
-| 17+ | Repeat/Scale | New scenarios | Build increasingly realistic networks |  |
+| Day | Lab | Core task |
+| ---: | --- | --- |
+| 1 | Management | Secure CLI/GUI access; inspect interfaces and configuration |
+| 2 | Basic Edge | Configure LAN/WAN addressing |
+| 3 | Internet Edge | Add security policy and source NAT |
+| 4 | Stateful Firewall | Inspect sessions and return traffic |
+| 5 | Policy Control | Control TCP, UDP, ICMP, and specific ports |
+| 6 | Troubleshooting | Diagnose broken policy, routing, and NAT |
+| 7 | Multi-Zone | Segment networks and control inter-zone traffic |
+| 8 | DMZ | Publish a web server with destination NAT/VIP |
+| 9 | Objects | Build address and service object groups |
+| 10 | Logs | Diagnose traffic from FortiGate logs |
+| 11 | Application Control | Apply application control and security profiles |
+| 12 | VPN | Build a site-to-site IPsec VPN |
+| 13 | VPN Troubleshooting | Break and recover VPN configuration and routing |
+| 14 | Consolidation | Rebuild LAN, WAN, policy, and NAT from memory |
+| 15 | Enterprise Edge | Combine routing, NAT, policy, DMZ, and logging |
+| 16 | Troubleshooting | Find and fix five injected firewall faults |
+| 17+ | Repeat and Scale | Build increasingly realistic networks |
 
 ## Network automation track
 
-| Day | Lab | Core task | Done? |
-| ---: | --- | --- | :---: |
-| 1 | Python → Cisco | SSH to one device with Netmiko |  |
-| 2 | Show Commands | Collect `show ip interface brief`, routes, and VLANs |  |
-| 3 | Multiple Devices | Loop through router/switch inventory |  |
-| 4 | Backups | Automatically save running configs |  |
-| 5 | JSON/YAML Inventory | Store IPs, usernames, and device types |  |
-| 6 | Config Push | Configure interfaces/VLANs using Python |  |
-| 7 | Validation | Verify changes after configuration |  |
-| 8 | Troubleshooting | Handle failed SSH/authentication/timeouts |  |
-| 9 | Parsing | Extract useful data from CLI output |  |
-| 10 | Jinja2 | Generate configurations from templates |  |
-| 11 | Compliance | Check NTP, VLANs, SSH, interfaces, etc. |  |
-| 12 | Report | Produce pass/fail compliance report |  |
-| 13 | Ansible | Run show commands across devices |  |
-| 14 | Ansible Config | Push configuration changes |  |
-| 15 | Consolidation | Rebuild automation workflow from scratch |  |
-| 16+ | Portfolio Project | Inventory → backup → change → validate → report |  |
+| Day | Lab | Core task |
+| ---: | --- | --- |
+| 1 | Python and Cisco | SSH to one device with Netmiko |
+| 2 | Show Commands | Collect interfaces, routes, and VLANs |
+| 3 | Multiple Devices | Loop through a router/switch inventory |
+| 4 | Backups | Save running configurations automatically |
+| 5 | JSON/YAML Inventory | Store IPs, usernames, and device types |
+| 6 | Config Push | Configure interfaces and VLANs with Python |
+| 7 | Validation | Verify post-configuration state |
+| 8 | Troubleshooting | Handle SSH, authentication, and timeout failures |
+| 9 | Parsing | Extract structured data from CLI output |
+| 10 | Jinja2 | Generate configurations from templates |
+| 11 | Compliance | Check NTP, VLANs, SSH, and interfaces |
+| 12 | Reporting | Produce a pass/fail compliance report |
+| 13 | Ansible | Run show commands across devices |
+| 14 | Ansible Config | Push configuration changes |
+| 15 | Consolidation | Rebuild the workflow from scratch |
+| 16+ | Portfolio Project | Inventory → backup → change → validate → report |
 
-## Lab documentation standard
+## Documentation approach
 
-Each completed lab should include:
-
-1. Objective and scenario
-2. Topology and IP plan
-3. Configuration steps or automation workflow
-4. Validation tests
-5. Troubleshooting notes
-6. Sanitized evidence
-7. Lessons learned
-
-Use [LAB_TEMPLATE.md](LAB_TEMPLATE.md) when starting a new lab.
+Routine practice does not need a full report. Complete write-ups are reserved for milestone labs that best demonstrate design, implementation, validation, and troubleshooting. Use [LAB_TEMPLATE.md](LAB_TEMPLATE.md) for those selected projects.
 
 ## Security and privacy
 
