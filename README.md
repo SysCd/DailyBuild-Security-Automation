@@ -25,25 +25,48 @@ A practical portfolio of network security and automation labs, centred on FortiG
 └── evidence/        # Sanitized screenshots and command output
 ```
 
-## FortiGate learning path
+## Firewall lab track — FortiGate
 
-| Lab | Topic | Status |
-| --- | --- | --- |
-| 01 | Management access | Planned |
-| 02 | Basic edge firewall | Planned |
-| 03 | NAT and firewall policy | Planned |
-| 04 | DMZ design | Planned |
-| 05 | VPN | Planned |
+| Day | Scenario | Layout | Core task | Done? |
+| ---: | --- | --- | --- | :---: |
+| 1 | Management | Mac → FortiGate | Access CLI + GUI; inspect interfaces/config | No |
+| 2 | Basic Edge | Client → FortiGate → WAN | Configure LAN/WAN interfaces and addressing |  |
+| 3 | Internet Edge | Client → FortiGate → Internet | Security policy + source NAT |  |
+| 4 | Stateful Firewall | Client → FortiGate → Server | Inspect sessions and understand return traffic |  |
+| 5 | Policy Control | LAN → FortiGate → WAN | Allow/deny TCP, UDP, ICMP, and specific ports |  |
+| 6 | Troubleshooting | Reuse Day 5 | Break policy, routing, and NAT; diagnose each |  |
+| 7 | Multi-Zone | Users + Servers → FortiGate | Separate networks and control inter-zone traffic |  |
+| 8 | DMZ | LAN + DMZ + WAN | Publish web server using destination NAT/VIP |  |
+| 9 | Objects | Reuse Day 8 | Address/service objects and groups |  |
+| 10 | Logs | Reuse topology | Diagnose traffic entirely from FortiGate logs |  |
+| 11 | Application Control | LAN → Internet | App control + security profiles |  |
+| 12 | VPN | HQ ↔ Branch | Site-to-site IPsec |  |
+| 13 | VPN Troubleshooting | Reuse Day 12 | Break phase/config/routes and recover |  |
+| 14 | Consolidation | Rebuild | Rebuild LAN/WAN/policy/NAT from memory |  |
+| 15 | Enterprise Edge | Users + Servers + DMZ | Combine routing, NAT, policies, and logging |  |
+| 16 | Troubleshooting | Reuse Day 15 | Inject five firewall faults and fix them |  |
+| 17+ | Repeat/Scale | New scenarios | Build increasingly realistic networks |  |
 
-## Automation learning path
+## Network automation track
 
-| Lab | Topic | Status |
-| --- | --- | --- |
-| 01 | Netmiko basics | Planned |
-| 02 | Configuration backups | Planned |
-| 03 | Device inventory | Planned |
-| 04 | Controlled configuration push | Planned |
-| 05 | Validation and compliance | Planned |
+| Day | Lab | Core task | Done? |
+| ---: | --- | --- | :---: |
+| 1 | Python → Cisco | SSH to one device with Netmiko |  |
+| 2 | Show Commands | Collect `show ip interface brief`, routes, and VLANs |  |
+| 3 | Multiple Devices | Loop through router/switch inventory |  |
+| 4 | Backups | Automatically save running configs |  |
+| 5 | JSON/YAML Inventory | Store IPs, usernames, and device types |  |
+| 6 | Config Push | Configure interfaces/VLANs using Python |  |
+| 7 | Validation | Verify changes after configuration |  |
+| 8 | Troubleshooting | Handle failed SSH/authentication/timeouts |  |
+| 9 | Parsing | Extract useful data from CLI output |  |
+| 10 | Jinja2 | Generate configurations from templates |  |
+| 11 | Compliance | Check NTP, VLANs, SSH, interfaces, etc. |  |
+| 12 | Report | Produce pass/fail compliance report |  |
+| 13 | Ansible | Run show commands across devices |  |
+| 14 | Ansible Config | Push configuration changes |  |
+| 15 | Consolidation | Rebuild automation workflow from scratch |  |
+| 16+ | Portfolio Project | Inventory → backup → change → validate → report |  |
 
 ## Lab documentation standard
 
@@ -70,4 +93,3 @@ All examples must be sanitized before they are committed. Real passwords, API ke
 - Build a safe Netmiko connection test using environment variables
 - Add automated configuration backups and validation
 - Expand into Ansible and Jinja2 after the Python foundations are complete
-
