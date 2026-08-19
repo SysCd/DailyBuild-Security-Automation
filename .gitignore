@@ -11,6 +11,7 @@ venv/
 *.pem
 *.key
 secrets.*
+automation/inventory/devices.yaml
 
 # Raw backups and generated output
 backups/
@@ -21,4 +22,3 @@ logs/
 .DS_Store
 .idea/
 .vscode/
-

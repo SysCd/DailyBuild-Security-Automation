@@ -33,6 +33,14 @@ A practical portfolio of network security and automation labs, centred on FortiG
 | Automation | Compliance checks | Validation and pass/fail reporting |
 | Automation | Configuration workflow | Inventory → backup → change → validate |
 
+## Automation
+
+The first automation stage uses Python and Netmiko to connect through the lab VPN to multiple Cisco IOSv routers in Cisco CML, then collect interface, routing, and version data.
+
+**Workflow:** Cisco CML → VPN → Python/Netmiko → IOSv routers
+
+[View the automation project](automation/)
+
 ## FortiGate environment
 
 Sanitized FortiGate VM dashboard used for the firewall labs.
